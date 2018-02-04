@@ -3,8 +3,8 @@
 
   include 'core/models/bin/class/recursos.php';
 
-  $recurso = new Recursos('test');
-  // $recurso2 = new Recursos('registro_usuarios');
+  $recurso = new Recursos();
+  $recurso->madera();
 
 ?>
 

@@ -9,17 +9,19 @@
 
     private $db;
 
-    public function __construct($nombreBD){
+    public function __construct(){
 
       include 'core/models/config/dbconexion.php';
 
-      $this->db = new BaseDatos($nombreBD);
+      $this->db = new BaseDatos();
 
     }
 
     public function madera(){
 
+      $a = $this->db->prepare('SELECT * FROM PACIENTE');
 
+      $a->execute();
 
     }
 
