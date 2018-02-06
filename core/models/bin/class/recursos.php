@@ -19,9 +19,8 @@
 
     public function madera(){
 
-      $a = $this->db->prepare('SELECT * FROM PACIENTE');
+      $a = $this->db->query('SELECT * FROM  RECURSOS');
 
-      $a->execute();
 
     }
 
